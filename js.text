@@ -1,0 +1,43 @@
+In JavaScript, there are two categories of data types: primitive and non-primitive (also known as reference types).
+
+Primitive data types are simple, basic data types that are not objects and do not have any methods. They are immutable, which means that their values cannot be changed. The primitive data types in JavaScript are:
+
+number: represents numeric values, including integers and floating-point numbers.
+string: represents text and is enclosed in single or double quotes.
+boolean: represents a logical value, either true or false.
+undefined: represents a variable that has been declared but not assigned a value.
+null: represents the intentional absence of any object value.
+symbol: represents a unique identifier that is used to prevent naming collisions.
+Non-primitive data types are complex data types that are mutable, meaning their values can be changed. Non-primitive data types are usually objects or arrays, and they have methods that can be called on them. Non-primitive data types are passed by reference, which means that when they are assigned to a new variable, the new variable points to the same memory location as the original object. The non-primitive data types in JavaScript are:
+
+Object: represents a collection of key-value pairs, similar to a dictionary or a hash table.
+Array: represents an ordered list of values, and can be indexed and iterated over.
+Function: represents a block of reusable code that can be called with arguments.
+In addition to these built-in data types, JavaScript also supports other data types that are derived from these, such as Date, RegExp, Map, Set, and more.
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+what is the immutable and mutable
+In programming, mutable and immutable are terms used to describe whether an object's state can be changed after it has been created.
+
+Mutable objects are objects whose values can be changed after they are created. This means that any operation that modifies a mutable object will change the object itself, rather than creating a new object with the modified values. Examples of mutable objects in JavaScript include arrays and objects. For example:
+
+let myArray = [1, 2, 3];
+myArray.push(4); // modifies the original array
+console.log(myArray); // output: [1, 2, 3, 4]
+
+In this example, we modify the original myArray object by adding a new value to it using the push() method.
+
+Immutable objects are objects whose values cannot be changed after they are created. This means that any operation that appears to modify an immutable object actually creates a new object with the modified values, rather than changing the original object. Examples of immutable objects in JavaScript include strings and numbers. For example:
+
+let myString = "Hello, World!";
+let newString = myString.toUpperCase(); // creates a new string
+console.log(myString); // output: "Hello, World!"
+console.log(newString); // output: "HELLO, WORLD!"
+
+In this example, we call the toUpperCase() method on the original myString object, which appears to modify the string by converting it to uppercase. However, in reality, a new string is created with the modified value, and the original string remains unchanged.
+----------------------------------------------------------------------------------------------------------
+
+
